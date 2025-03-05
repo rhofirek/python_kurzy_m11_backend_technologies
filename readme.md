@@ -1,8 +1,66 @@
 # Project HollyMovies
 
 ## Project description
-TBD
+Chceme vytvořit filmovou databázi. 
+1. Zobrazit seznam filmů 
+2. Zobrazit detaily filmu
+3. Zobrazit seznam herců/režisérů
+   1. Název
+   2. žánr
+   3. ...
+3. Filtrování filmů např. podle žánru 
+4. Hledání filmů
+5. Přidávání hodnocení filmů 
+6. Přidávání ocenění 
+7. Zobrazení seznamu seriálů
+8. Zobrazení seriálů/epizody
+9. Watchlist
 
+## Databáze
+- Genre
+  -[ ] name(String)
+  
+- Countries 
+  - [ ] name (String)
+  - [ ] flag (Image)
+
+- [ ] Creators
+  - [ ] first_name (String)
+  - [ ] last_name (String)
+  - [ ] country (-> Countries)
+  - [ ] date_of_birth (Date)
+  - [ ] date_of_death (Date)
+  - [ ] biography (String)
+  - [ ] awards (n:m -> ??)
+  - [ ] acting (n:m -> Movie)
+  - [ ] directing (n:m -> Movie)
+
+  
+- Movie
+  - title_original (String)
+  - title_cz (String)
+  - genres (n:m -> Genre)
+  - actors (n:M -> Creators)
+  - directors (n:m -> Creators)
+  - countries (n:m -> Countries)
+  - lenght (Int)
+  - description (String)
+  - released_date (Date)
+  - rating (Float)
+  - images (1:n -> Images)
+  - video_url (String)
+- [ ] Review
+  - [ ] reviewer (->User)
+  - [ ] movie (-> Movies)
+  - [ ] rating (Int, 1-5 hvězdiček)
+  - [ ] comment (String)
+  - [ ] created (Date)
+  - [ ] updated (Date)
+
+- [ ] Images
+- [ ] Awards
+
+- [ ] User (Defaultní z Django)
 ## Django 
 
 ### Instalace
