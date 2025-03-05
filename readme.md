@@ -15,6 +15,7 @@ Chceme vytvořit filmovou databázi.
 7. Zobrazení seznamu seriálů
 8. Zobrazení seriálů/epizody
 9. Watchlist
+-[ ] 10 Přidávání jednotlivých prvků a jejich editace
 
 ## Databáze
 - Genre
