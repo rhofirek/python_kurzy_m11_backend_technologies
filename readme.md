@@ -84,6 +84,26 @@ Případně můžeme zadat ručně port serveru
 ```bash
   python manage.py runserver 8001
 ```
+## Aplikace
+
+### Vytvoření aplikace
+
+>[!WARNING]
+> Nesmíme zapomenout zaregistrovat aplikaci do `setting.py`
+> ```angular2html
+> INSTALLED_APPS = [
+>    'django.contrib.admin',
+>    'django.contrib.auth',
+>    'django.contrib.contenttypes',
+>    'django.contrib.sessions',
+>    'django.contrib.messages',
+>    'django.contrib.staticfiles',
+>
+>    'viewer',
+> ]
+> ``` 
+
+### Struktura Aplikace
 
 # Rady pro finální projekt 
 
